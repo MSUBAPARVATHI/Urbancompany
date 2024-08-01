@@ -21,14 +21,14 @@ const Layout = ({ children }: LayoutProps) => {
   </div>
 {/* nav bar */}
 
-<div className='justify-left m-3 gap-5'>
-  <div className="navbar bg-neutral text-neutral-content">
+<div className='justify-left m-1 gap-5'>
+  <div className="navbar bg-base-300">
   <button className="btn btn-ghost text-xl">HOME</button>
 </div>
 <div className="navbar bg-base-300">
   <button className="btn btn-ghost text-xl">BEAUTY</button>
 </div>
-<div className="navbar bg-primary text-primary-content">
+<div className="navbar bg-base-300">
   <button className="btn btn-ghost text-xl">NATIVE</button>
 </div>
 
@@ -50,7 +50,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-52 p-2 shadow">
         <li>
           <a className="justify-between">
             Profile
@@ -67,6 +67,8 @@ const Layout = ({ children }: LayoutProps) => {
 
   </header>
             <main>{children}</main>
+
+            <h1>Welcome to Urban Company</h1>
 
             
             <footer className='bg-black mw-5 mh-5 p-10 text-white text-center '>&copy; 2024 Urban Company. All rights reserved.</footer>

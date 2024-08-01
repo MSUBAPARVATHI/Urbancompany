@@ -1,21 +1,42 @@
 const Card: React.FC =()=>{
     return(
-        <div className="flex justify-center gap-5">
+        //4 containers 
+        <div className="flex justify-left m-5 gap-5">
         <div className="flex-x">
-        <div className="max-w-sm mx-auto flex-2 bg-pink-500 rounded-lg text-black shadow-md p-10 m-5 overflow-hidden">
-       <h1 className="text-black text-center ">card 1</h1>
+        <div className="card bg-white shadow-md rounded max-w-sm mx-auto flex-2  text-black shadow-md p-10 m-5 overflow-hidden">
+            <div className="m-2 justify-left">
+                <img src='https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1696852847761-574450.jpeg' alt='demoimage'></img>
+            </div>
+       <h1 className="text-black text-center text-xl font-bold ">card 1</h1><br/>
+       <p className="text-gray-700 text-center">Description for card 1.</p>
         </div>
-        <div className="max-w-sm mx-auto flex-2 bg-blue-500 rounded-lg shadow-md p-10 m-5 text-blue-500 overflow-hidden">
-        <h1 className="text-black text-center ">card 2</h1>
+
+        <div className="card bg-white shadow-md rounded max-w-sm mx-auto flex-2 bg-blue-500 rounded-lg shadow-md p-10 m-5 text-blue-500 overflow-hidden">
+        <div className="m-2 justify-left">
+                <img src='https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1696852847761-574450.jpeg' alt='demoimage'></img>
+            </div>
+        <h1 className="text-black text-center text-xl font-bold  ">card 2</h1><br/>
+        <p className="text-gray-700 text-center">Description for card 2.</p>
         </div>
         </div>
+
         <div className="flex-y">
-        <div className="max-w-sm mx-auto flex-1 bg-blue-500 rounded-lg shadow-md p-10 m-5 text-white overflow-hidden">
-        <h1 className="text-black text-center ">card 3</h1>
+        <div className=" card bg-white shadow-md rounded max-w-sm mx-auto flex-1 bg-blue-500 rounded-lg shadow-md p-10 m-5 text-white overflow-hidden">
+        <div className="m-2 justify-left">
+                <img src='https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1696852847761-574450.jpeg' alt='demoimage'></img>
+            </div>
+        <h1 className="text-black text-center text-xl font-bold ">card 3</h1><br/>
+        <p className="text-gray-700 text-center">Description for card 3.</p>
         </div>
-        <div className="max-w-sm mx-auto flex-1 bg-blue-500 rounded-lg shadow-md p-10 m-5 text-white overflow-hidden">
-        <h1 className="text-black text-center ">card 4</h1>
+
+        <div className=" card bg-white shadow-md rounded max-w-sm mx-auto flex-1 bg-blue-500 rounded-lg shadow-md p-10 m-5 text-white overflow-hidden">
+        <div className="m-2 justify-left">
+                <img src='https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template,q_auto:low,f_auto/dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1696852847761-574450.jpeg' alt='demoimage'></img>
+            </div>
+        <h1 className="text-black text-center text-xl font-bold ">card 4</h1><br/>
+        <p className="text-gray-700 text-center">Description for card 4.</p>
          </div>
+
          </div>
          </div>
          );
