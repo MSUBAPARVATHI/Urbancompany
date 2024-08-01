@@ -1,13 +1,10 @@
-import SignUp from '../../components/SignUp';
-import Layout from '../../components/Layout';
-import Home from '@/components/Home';
-import SignIn from '@/components/SignIn';
+// call signup components
 
-export default function SignUpPage() {
+import SignUp from '../../components/SignUp';
+
+export default function Signup() {
     return (
-        // <Layout>
-        //     <Home />
-        // </Layout>
-        <SignIn/>
+        
+        <SignUp/>
     );
 }

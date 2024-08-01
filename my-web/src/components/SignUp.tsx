@@ -1,14 +1,16 @@
-import Link from 'next/link'
-import React, { FormEvent, useState } from 'react'
-import { useRouter } from 'next/router'
-import { auth } from '../firebase'
-import { createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth'
+// pages/Signup.tsx
 
-const Signup = () => {
+import Link from 'next/link';
+import React, { FormEvent, useState } from 'react';
+import { useRouter } from 'next/router';
+import { auth } from '../firebase';
+import { createUserWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
+
+const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState<string | null>(null);
-    const router = useRouter();  // Initialize useRouter hook
+    const router = useRouter();
 
     const handleSignup = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -76,6 +78,9 @@ const Signup = () => {
                             </div>
                         </form>
                         {error && <p className="text-red-500">{error}</p>}
+                        <p className="text-lg mt-4 text-center">
+                            Already have an account? <Link href="/Signin" className="text-blue-500">Sign In</Link>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -83,4 +88,4 @@ const Signup = () => {
     );
 }
 
-export default Signup;
+export default SignUp;

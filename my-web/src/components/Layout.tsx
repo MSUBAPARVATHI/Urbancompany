@@ -17,56 +17,35 @@ const Layout = ({ children }: LayoutProps) => {
             <header>
             <div className="navbar bg-base-100">
   <div className="flex-1">
-    <a className="btn btn-ghost mr-5 text-xl">daisyUI</a>
+    
   </div>
+{/* nav bar */}
 
-  <ul className="menu menu-horizontal bg-base-200 rounded-box">
-  <li>
-    <a>
-      <h1
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        home
-      </h1>
-    </a>
-  </li>
-  <li>
-    <a>
-      <h1       
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        native
-      </h1>
-    </a>
-  </li>
-  <li>
-    <a>
-      <h1
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        beauty
-      </h1>
-    </a>
-  </li>
-</ul>
+<div className='justify-left m-3 gap-5'>
+  <div className="navbar bg-neutral text-neutral-content">
+  <button className="btn btn-ghost text-xl">HOME</button>
+</div>
+<div className="navbar bg-base-300">
+  <button className="btn btn-ghost text-xl">BEAUTY</button>
+</div>
+<div className="navbar bg-primary text-primary-content">
+  <button className="btn btn-ghost text-xl">NATIVE</button>
+</div>
 
+</div>
 
+{/* input search */}
   <div className="flex-none gap-2">
     <div className="form-control">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+      <input type="search" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
     </div>
+
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
+        <div className="w-500px rounded-full">
           <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            alt="logo"
+            src="./logo.webp" />
         </div>
       </div>
       <ul
@@ -86,10 +65,12 @@ const Layout = ({ children }: LayoutProps) => {
 </div>
 
 
-                
-            </header>
+  </header>
             <main>{children}</main>
-            <footer>&copy; 2024 Urban Company. All rights reserved.</footer>
+
+            
+            <footer className='bg-black mw-5 mh-5 p-10 text-white text-center '>&copy; 2024 Urban Company. All rights reserved.</footer>
+          
         </div>
     );
 };
