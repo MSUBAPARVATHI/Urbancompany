@@ -15,7 +15,11 @@ const Layout = ({ children }: LayoutProps) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>
+
             <div className="navbar bg-base-100">
+              {/* TITLE in header */}
+            <div className='heading text-black text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... '>URBAN COMPANY</div>
+  
   <div className="flex-1">
     
   </div>
