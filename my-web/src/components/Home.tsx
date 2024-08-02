@@ -6,9 +6,9 @@ const Home = () => {
         <><div>
         
             {/* dynamic call card components in home page  */}
-        <Layout>
+         <Layout> 
              <Card/>
-             </Layout> 
+              </Layout>  
            {/* <p>Your one-stop solution for all urban services</p> */}
 </div>
             </>
