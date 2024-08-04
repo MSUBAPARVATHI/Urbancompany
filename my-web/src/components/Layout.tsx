@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
   </div>
 {/* nav bar */}
 
-<div className='justify-left m-1 gap-5'>
+{/* <div className='flex space-between m-10 gap-5'>
   <div className="navbar">
   <button className="btn btn-ghost text-xl">HOME</button>
 </div>
@@ -41,7 +41,13 @@ const Layout = ({ children }: LayoutProps) => {
   <button className="btn btn-ghost text-xl">NATIVE</button>
 </div>
 
-</div>
+</div> */}
+
+<div className='flex m-10 gap-5'>
+<a className="link link-hover">HOME</a>
+    <a className="link link-hover">BEAUTY</a>
+    <a className="link link-hover">NATIVE</a>
+    </div>
 
 {/* input search */}
   <div className="flex gap-2">
@@ -77,7 +83,6 @@ const Layout = ({ children }: LayoutProps) => {
   </header>
             <main>{children}</main>
 
-            <h1>Welcome to Urban Company</h1>
 
             
             <footer className="footer bg-base-300 text-base-content p-10">

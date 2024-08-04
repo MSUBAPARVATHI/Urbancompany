@@ -61,13 +61,13 @@ const Card: React.FC =()=>{
   </div>
 
 
-  {/* <div className="divider divider-horizontal">or</div> */}
+  <div className="divider divider-horizontal"></div>
 
   <div className="card flex w-full flex-col rounded-none lg:flex-row bg-white grid h-30 flex-grow place-items-center">
 
-  <div className="w-5 h-5 p-5 m-2">
+  <div className="w-1/2 h-5 p-5 m-2">
     <div className="flex-grow w-10 p-5 m-5">
-                <img src="collection.webp"></img>
+                <img src="/collection.webp"/>
     </div>
 </div>
 
@@ -118,6 +118,74 @@ const Card: React.FC =()=>{
   </div>
 
          </div>
+         {/* 3 images container */}
+
+            <div className="flex justify-between gap-5 w-full" id="slide1">
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-10 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1715685371430-6b3871.jpeg"></img>
+                
+            </div>
+
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1701759875987-8b654d.jpeg"></img>
+            
+            </div>
+
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1711428209166-2d42c0.jpeg"></img>
+            </div>
+        
+        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" className="btn btn-circle">❮</a>
+      <a href="#slide2" className="btn btn-circle">❯</a>
+    </div>
+    </div>
+
+
+        <div className="flex justify-between gap-5" id="slide2">
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-10 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1715685371430-6b3871.jpeg"></img>
+                
+            </div>
+
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1701759875987-8b654d.jpeg"></img>
+            
+            </div>
+
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1711428209166-2d42c0.jpeg"></img>
+          </div>
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" className="btn btn-circle">❮</a>
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+        </div>
+
+
+        <div className="flex justify-between gap-5" id="slide3">
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-10 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1715685371430-6b3871.jpeg"></img>
+                
+            </div>
+
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1701759875987-8b654d.jpeg"></img>
+            
+            </div>
+
+            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 width-5 height-5 m-5 p-5 ... ">
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_394,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/home-screen/1711428209166-2d42c0.jpeg"></img>
+                </div>
+                <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" className="btn btn-circle">❮</a>
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
+           
+        </div>
+
+
+
 
          {/* long images are added */}
 
