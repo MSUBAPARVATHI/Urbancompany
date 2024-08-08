@@ -2,12 +2,13 @@ import collection from '../../public/collection.webp'
 const Card: React.FC =()=>{
     return(
         <div>
-            <div className="flex w-full">
-  <div className="card flex w-full flex-col rounded-none lg:flex-row bg-white grid h-30 flex-grow place-items-left">
+          <div>
+            <div className="flex flex-grow">
+  <div className="w-1/2 card flex w-full flex-col rounded-none lg:flex-row bg-white grid h-30 flex-grow place-items-left ">
 
     <h1 className="text-xl text-bold text-black m-3">Home services at your doorstep</h1>
 
-  <div className="flex-x card-bordered w-1/2 h-50 p-5 m-5">
+  <div className="flex-x card-bordered  h-50 p-5 m-5">
             <p className="flex text-align-center text-xl text-black">What are you looking for?</p>
 
             <div className="flex justify-between gap-2">
@@ -61,16 +62,22 @@ const Card: React.FC =()=>{
   </div>
 
 
-  <div className="divider divider-horizontal"></div>
+  {/* <div ></div> */}
+  {/* className="divider divider-horizontal" */}
+  {/* <div className="card flex w-full flex-col rounded-none lg:flex-row bg-white grid h-30 flex-grow place-items-center w-1/2">
 
-  <div className="card flex w-full flex-col rounded-none lg:flex-row bg-white grid h-30 flex-grow place-items-center">
-
-  <div className="w-1/2 h-5 p-5 m-2">
-    <div className="flex-grow w-10 p-5 m-5">
+  <div className="w-1/2  ">
+    <div className="flex-grow w-100 p-100 mt-2 h-100 align-center">
                 <img src="/collection.webp"/>
     </div>
 </div>
+</div> */}
 
+<div className='flex flex-grow w-1/2'>
+  <div className='flex flex-grow w-full p-50 h-50 align-center'>
+  <img src="/collection.webp"/>
+  </div>
+</div>
             
 </div>
         
